@@ -1,0 +1,44 @@
+.navbar{
+    background: rgba(22, 21, 21, 0.719);
+}
+
+.navbar-collapse ul li a{
+    color: rgba(156, 158, 22, 0.575);
+}
+
+.navbar ul li{
+    margin-left: 30px;
+}
+
+
+.carousel-caption{
+    background: rgba(44, 48, 48, 0.767);
+    color: white;
+    width: 100%;
+    left: 0;
+}
+
+.carousel-indicators{
+    margin-bottom: 25px;
+}
+
+.nav-link{
+  color: white;
+}
+
+
+
+#btn{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1.5px solid rgb(145, 141, 141);
+    border-radius: 5px;
+    background: rgb(129, 102, 102);
+    color: white;
+}
+
+#btn:hover{
+    color: rgb(184, 209, 70);
+    transition: all .4s;
+}

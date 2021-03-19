@@ -1,0 +1,46 @@
+<!-- Active Only Available Days Calender Date -->
+<div class="row" style="margin-left: 10%; margin-right: 10%;">
+  <div style="margin-top: 30px;" class="col-lg-5 text-center">
+    <img style="border-radius: 10%;" height="100%" width="100%" src="assets/gallery/doctor1.jpg" alt="">
+  </div>
+
+  <div style="margin-top: 30px;" class="col-lg-6 text-center">
+    <h1><b>Dr. John Doe</b></h1>
+    <p><i>Senior Consultant – Gastroenterology</i></p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, excepturi ab dolore doloribus quos ad veritatis iure
+      eveniet possimus. Minima rerum, porro optio debitis repellendus ut perspiciatis omnis similique cum?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, excepturi ab dolore doloribus quos ad veritatis iure
+      eveniet possimus. Minima rerum, porro optio debitis repellendus ut perspiciatis omnis similique cum?
+    </p>
+
+    <img style="border-radius: 10%;" height="25%" width="20%" src="assets/gallery/arow.gif" alt="">
+  </div>
+</div>
+
+  <div class="row" style="margin-left: 10%; margin-right: 10%;">
+    <div class="col-lg-2 text-center">
+    </div>
+    <!-- input calender only available days -->
+    <div style="margin-top: 40px;" class="col-lg-8 text-center">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <label><b>Dr. John Doe's Calender</b></label>
+        <input matInput [matDatepicker]="picker" [matDatepickerFilter]="dateFilter">
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <button style="margin-right: 1%;" type="button" class="btn" (click)="picker.open()">Select Date</button>
+      <a routerLink="/choose-slot/Dr-John" href=""><button class="btn">Select Time Slot</button></a>
+    </div>
+    <div class="col-lg-2 text-center">
+    </div>
+  </div>
+
+  <div class="footer-button">
+    <div class="footer-btn-inner">
+      &copy; Digital Healthcare | Designed by Parvez Hossain
+    </div>
+  </div>
+
+

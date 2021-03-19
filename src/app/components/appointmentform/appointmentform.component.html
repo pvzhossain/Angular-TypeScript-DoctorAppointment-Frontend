@@ -1,0 +1,99 @@
+<style>
+  .form-container{
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px #6a8ccc88;
+  }
+</style>
+
+<!-- Form Header -->
+<div style="text-align: center; margin-top: 30px;">
+  <h1><b>Fillup Appointment Form</b></h1>
+</div>
+
+<!-- start form -->
+<form class="form-container" style="margin-left: 15%; margin-right: 15%; text-align: center;">
+
+  <!-- row start -->
+  <div class="form-row">
+    <!-- input name -->
+    <div class="form-group col-md-4">
+      <input type="text" class="form-control" required name="name" id="name" placeholder="Name">
+    </div>
+    <!-- input email -->
+    <div class="form-group col-md-4">
+      <input type="email" class="form-control" required name="email" id="email" placeholder="Email Address">
+    </div>
+    <!-- input phone number -->
+    <div class="form-group col-md-4">
+      <input type="number" class="form-control" required name="phone_number" id="phone_number" placeholder="Phone Number">
+    </div>
+  </div>
+  <!-- row end -->
+
+  <!-- row start -->
+  <div class="form-row">
+    <!-- input gender -->
+    <div class="form-group col-md-6">
+      <select id="gender" name="gender" required class="form-control">
+        <option selected>Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Others</option>
+      </select>
+    </div>
+    <!-- input age -->
+    <div class="form-group col-md-6">
+      <input type="number" class="form-control" required name="age" id="age" placeholder="Age">
+    </div>
+  </div>
+  <!-- row end -->
+
+  <!-- row start -->
+  <div class="form-row">
+    <!-- input city -->
+    <div class="form-group col-md-4">
+      <select id="city" name="city" required class="form-control">
+        <option selected>City</option>
+        <option>Dhaka</option>
+        <option>Rajshahi</option>
+        <option>Khulna</option>
+        <option>Barisal</option>
+      </select>
+    </div>
+    <!-- input address -->
+    <div class="form-group col-md-4">
+      <input type="text" class="form-control" required name="address" id="address" placeholder="Address">
+    </div>
+    <!-- input prescription file -->
+    <div class="form-group col-md-4">
+      <input type="file" placeholder="File" required id="prescription_file" name="prescription_file">
+    </div>
+  </div>
+  <!-- row end -->
+
+  <!-- input health complication -->
+  <div class="form-group col-md-12">
+    <textarea placeholder="Describe Health Complication" class="form-control" required name="health_complication" id="health_complication" rows="5"></textarea>
+  </div>
+
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Remember
+      </label>
+    </div>
+  </div>
+  <button routerLink="" type="submit" class="btn">Confirm Appointment</button>
+</form>
+<!-- end form -->
+
+<!-- Footer -->
+<div class="footer-button">
+  <div class="footer-btn-inner">
+    &copy; Digital Healthcare | Designed by Parvez Hossain
+  </div>
+</div>
+
+
